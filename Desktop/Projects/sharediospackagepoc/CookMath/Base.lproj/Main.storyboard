@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CookMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Qhh-pe-yde">
+                                <rect key="frame" x="108" y="144" width="198" height="267.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-SZ-2N9">
+                                        <rect key="frame" x="37.5" y="0.0" width="123.5" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPE-OA-lg7">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99v-J9-FNS">
+                                                <rect key="frame" x="60" y="0.0" width="63.5" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TWV-IB-XKH">
+                                        <rect key="frame" x="0.0" y="47" width="198" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-LL-znJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkJ-HN-NYX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJO-5w-4tK">
+                                                <rect key="frame" x="42" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="subtractButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRY-pz-6rB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUl-SR-meX">
+                                                <rect key="frame" x="84" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="*">
+                                                    <color key="titleColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="multipleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdf-fp-1OS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-6k-St0">
+                                                <rect key="frame" x="126" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="/">
+                                                    <color key="titleColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="divisionButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbX-PX-JIP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIf-hU-Yvv">
+                                                <rect key="frame" x="168" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="%">
+                                                    <color key="titleColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="moduloButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgs-MM-zbg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="mcg-Ed-ybV">
+                                        <rect key="frame" x="37.5" y="90" width="123.5" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1e-jJ-PJ4">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fiy-bF-3yI">
+                                                <rect key="frame" x="60" y="0.0" width="63.5" height="34"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-ym-MLY">
+                                        <rect key="frame" x="93.5" y="137" width="11" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XxG-Vk-bBr">
+                                        <rect key="frame" x="61" y="170.5" width="76" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19841609589041095" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                        <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gs-1Z-SkU">
+                                        <rect key="frame" x="74" y="217.5" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math Operations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwZ-Un-8u1">
+                                <rect key="frame" x="109.5" y="79" width="195.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ggB-wa-MGf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Qhh-pe-yde" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Qba-Kc-Pnf"/>
+                            <constraint firstItem="CwZ-Un-8u1" firstAttribute="centerX" secondItem="Qhh-pe-yde" secondAttribute="centerX" id="Zb4-Ya-2me"/>
+                            <constraint firstItem="CwZ-Un-8u1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="aV6-AV-4PT"/>
+                            <constraint firstItem="Qhh-pe-yde" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fyc-E7-VaG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="0gs-1Z-SkU" id="DRQ-ba-FlX"/>
+                        <outlet property="firstValueTextField" destination="99v-J9-FNS" id="yYf-xt-WS4"/>
+                        <outlet property="mathOperationLabel" destination="CwZ-Un-8u1" id="Hui-E9-bTt"/>
+                        <outlet property="resultValueTextField" destination="XxG-Vk-bBr" id="fvM-UX-a4r"/>
+                        <outlet property="secondValueTextField" destination="Fiy-bF-3yI" id="jvX-Ku-49u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+    </scenes>
+</document>

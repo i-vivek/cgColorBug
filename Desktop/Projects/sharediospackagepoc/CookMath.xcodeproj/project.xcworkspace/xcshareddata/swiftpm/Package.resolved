@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MathOperations",
+        "repositoryURL": "https://github.com/i-vivek/MathOperations.git",
+        "state": {
+          "branch": null,
+          "revision": "349a42b328b5f914ca0b21ee9fcce92a3517e4ee",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
